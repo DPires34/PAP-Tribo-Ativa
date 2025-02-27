@@ -1,5 +1,5 @@
-e<?php
-    require_once('files/cabecalho.php');
+<?php
+    require_once('Files/cabecalho.php');
 ?>
     <!--Slide-->
       <section class="tns-carousel tns-controls-lg">
@@ -219,9 +219,9 @@ e<?php
             <div class="card product-card">
               <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Adicionar aos Favoritos"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="Loja-single-v1.html"><img src="img/Loja/Catalogo/Ace3.png" alt="Produto"></a>
               <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Acessórios para treino</a>
-                <h3 class="product-title fs-sm"><a href="Loja-single-v1.html">Bolas / Fitas / Luvas</a></h3>
+                <h3 class="product-title fs-sm"><a href="Loja-single-v1.html">Pack - Bola + 5 Cones + Escada de Fitas</a></h3>
                 <div class="d-flex justify-content-between">
-                  <div class="product-price"><span class="text-accent">Desde 15.99€</span></div>
+                  <div class="product-price"><span class="text-accent">Desde 39.99€</span></div>
                 </div>
               </div>
               <div class="card-body card-body-hidden">
@@ -327,29 +327,6 @@ e<?php
         </div>
         <div class="text-center pt-3"><a class="btn btn-outline-accent" href="Loja-grid-ls.html">Mais Produtos<i class="ci-arrow-right ms-1"></i></a></div>
       </section>
-      <!-- Banners-->
-      <section class="container pb-4 mb-md-3">
-        <div class="row">
-          <div class="col-md-8 mb-4">
-            <div class="d-sm-flex justify-content-between align-items-center bg-secondary overflow-hidden rounded-3">
-              <div class="py-4 my-2 my-md-0 py-md-5 px-4 ms-md-3 text-center text-sm-start">
-                <h4 class="fs-lg fw-light mb-2">Oferta por tempo limitado!</h4>
-                <h3 class="mb-4">---</h3><a class="btn btn-primary btn-shadow btn-sm" href="#">Compra Agora</a>
-              </div><img class="d-block ms-auto" src="img/Logotipo/Logo1.png" width="300" height="300" alt="Loja Tribo_Ativa">
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-          <div class="d-sm-flex justify-content-between align-items-center bg-secondary overflow-hidden rounded-3">
-          <div class="py-4 my-2 px-4 text-center">
-                <div class="py-1">
-                  <h5 class="mb-2">Adicione o seu banner aqui</h5>
-                  <p class="fs-sm text-muted">Reserve o seu lugar!</p><a class="btn btn-primary btn-shadow btn-sm" href="#">Contacta-nos</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!--Categoria em destaque-->
       <section class="container mb-4 pb-3 pb-sm-0 mb-sm-5">
         <div class="row">
@@ -358,13 +335,13 @@ e<?php
             <div class="d-flex flex-column h-100 overflow-hidden rounded-3" style="background-color: #ffc107;">
               <div class="d-flex justify-content-between px-grid-gutter py-grid-gutter">
                 <div>
-                  <h3 class="mb-1">Dia do Desporto</h3><a class="fs-md" href="Loja-grid-ls.html">Melhor Loja de Desporto<i class="ci-arrow-right fs-xs align-middle ms-1"></i></a>
+                  <h3 class="mb-1">Catálogo de Produtos em Promoção</h3><a class="fs-md" href="Loja-grid-ls.html">Produtos em Promoção<i class="ci-arrow-right fs-xs align-middle ms-1"></i></a>
                 </div>
                 <div class="tns-carousel-controls" id="hoodie-day">
                   <button type="button"><i class="ci-arrow-left"></i></button>
                   <button type="button"><i class="ci-arrow-right"></i></button>
                 </div>
-              </div><a class="d-none d-md-block mt-auto" href="Loja-grid-ls.html"><img class="d-block w-100" src="img/home/categories/.png" alt="Produto"></a>
+              </div><a class="d-none d-md-block mt-auto" href="Loja-grid-ls.html"><img class="d-block w-100" src="img/Loja/Catalogo/.png" alt="Produto"></a>
             </div>
           </div>
           <!--Carrossel de Produtos-->
@@ -444,7 +421,7 @@ e<?php
                   </div>
                     <hr class="d-sm-none">
                 </div>
-                <!--Carrosel2-->
+                <!--Carrosel 2-->
                 <div>
                   <div class="row mx-n2">
                       <div class="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4 d-none d-lg-block">
@@ -480,39 +457,6 @@ e<?php
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
-                        <div class="card product-card">
-                          <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Adicionar aos Favoritos"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="Loja-single-v1.html"><img src="img/Loja/Catalogo/CPretaAzul.png" alt="Produto"></a>
-                          <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Equipamentos de Futebol</a>
-                            <h3 class="product-title fs-sm"><a href="Loja-single-v1.html">Camisola Preta - Azul</a></h3>
-                            <div class="d-flex justify-content-between">
-                              <div class="product-price"><span class="text-accent">74.<small>99€</small></span></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
-                        <div class="card product-card">
-                            <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Adicionar aos Favoritos"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="Loja-single-v1.html"><img src="img/Loja/Catalogo/CAzulVerde.png" alt="Produto"></a>
-                          <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Equipamentos de Futebol</a>
-                              <h3 class="product-title fs-sm"><a href="Loja-single-v1.html">Camisola Verde - Azul</a></h3>
-                            <div class="d-flex justify-content-between">
-                              <div class="product-price"><span class="text-accent">74.<small>99€</small></span></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
-                        <div class="card product-card">
-                            <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Adicionar aos Favoritos"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="Loja-single-v1.html"><img src="img/Loja/Catalogo/CVermelha1.png" alt="Produto"></a>
-                          <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Equipamentos de Futebol</a>
-                              <h3 class="product-title fs-sm"><a href="Loja-single-v1.html">Camisola Vermelha 2024/2025</a></h3>
-                            <div class="d-flex justify-content-between">
-                              <div class="product-price"><span class="text-accent">75.<small>99€</small></span></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -536,13 +480,5 @@ e<?php
         </div>
       </section>
       <?php
-    require_once('files/rodape.php');
+    require_once('Files/rodape.php');
 ?>
-
-
-
-
-
-
-
-      

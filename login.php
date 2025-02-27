@@ -1,5 +1,5 @@
 <?php
-require_once('files/cabecalho.php');
+require_once('Files/cabecalho.php');
 ?>
 
 <!--Login / Registar-se-->
@@ -7,7 +7,10 @@ require_once('files/cabecalho.php');
         <div class="row">
           <div class="col-md-6">
             <div class="card border-0 shadow">
-              <div class="card-body">
+            <div class="card-body"> 
+              <form action="login-logic.php" method="post">
+
+              
                 <h2 class="h4 mb-1">Entrar</h2>
                 <div class="py-3">
                   <h3 class="d-inline-block align-middle fs-base fw-medium mb-2 me-2">Iniciar sessão com:</h3>
@@ -17,11 +20,11 @@ require_once('files/cabecalho.php');
                 <h3 class="fs-base pt-4 pb-2">Por email</h3>
                 <form class="needs-validation" novalidate>
                   <div class="input-group mb-3"><i class="ci-mail position-absolute top-50 translate-middle-y text-muted fs-base ms-3"></i>
-                    <input class="form-control rounded-start" type="email" placeholder="Email" required>
+                    <input class="form-control rounded-start" name="email" type="email" placeholder="Email" required>
                   </div>
                   <div class="input-group mb-3"><i class="ci-locked position-absolute top-50 translate-middle-y text-muted fs-base ms-3"></i>
                     <div class="password-toggle w-100">
-                      <input class="form-control" type="password" placeholder="Password" required>
+                      <input name="password" class="form-control" type="password" placeholder="Password" required>
                       <label class="password-toggle-btn" aria-label="Show/hide password">
                         <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
                       </label>
@@ -39,11 +42,15 @@ require_once('files/cabecalho.php');
                   </div>
                 </form>
               </div>
+
+              </form>  
+
+
             </div>
           </div>
           <div class="col-md-6 pt-4 mt-3 mt-md-0">
             <h2 class="h4 mb-3">Sem conta? Registe-se</h2>
-            <form method="post" action="login-logic.php" class="needs-validation" novalidate>
+            <form method="post" action="registador-logic.php" class="needs-validation" novalidate>
               <div class="row gx-4 gy-3">
                 <div class="col-sm-6">
                   <label class="form-label" for="reg-fn">Primeiro Nome</label>
@@ -84,5 +91,5 @@ require_once('files/cabecalho.php');
         </div>
       </div>
 <?php
-require_once('files/rodape.php');
+require_once('Files/rodape.php');
 ?>
