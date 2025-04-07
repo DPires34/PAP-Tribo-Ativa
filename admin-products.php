@@ -2,10 +2,8 @@
 require_once('Files/funcao.php');
 protected_area();
 
-$categories = db_select('categories', ' 1 ORDER BY id DESC ');
-/*echo "<pre>";
-print_r($categories);
-die();*/
+$products = db_select('products', ' 1 ORDER BY id DESC ');
+
 
 require_once('Files/cabecalho.php');
 ?>
@@ -22,7 +20,7 @@ require_once('Files/cabecalho.php');
             </nav>
           </div>
           <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
-            <h1 class="h3 text-light mb-0">Categorias de produtos</h1>
+            <h1 class="h3 text-light mb-0">Produtos</h1>
           </div>
         </div>
       </div>
@@ -52,13 +50,14 @@ require_once('Files/cabecalho.php');
 
 
                 <?php 
-                    foreach ($categories as $key => $value) {
+                    foreach ($products as $key => $pro) {
                 ?>
                 <!-- Product-->
-                <div class="d-block d-sm-flex align-items-center py-4 border-bottom"><a class="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto" href="marketplace-single.html" style="width: 12.5rem;"><img class="rounded-3" src="img/marketplace/products/th08.jpg" alt="Product"></a>
+                <div class="d-block d-sm-flex align-items-center py-4 border-bottom"><a class="d-block mb-3 mb-sm-0 me-sm-4 ms-sm-0 mx-auto" href="marketplace-single.html" style="width: 12.5rem;">
+                <img class="rounded-3" src="<?= get_product_thumb($pro['photos']) ?>" alt="Product"></a>
                   <div class="text-center text-sm-start">
-                    <h3 class="h6 product-title mb-2"><a href="marketplace-single.html">Flat-line E-Commerce Icons (AI)</a></h3>
-                    <div class="d-inline-block text-accent">$18.<small>00</small></div>
+                    <h3 class="h6 product-title mb-2"><a href="marketplace-single.html"> <?= $pro['name'] ?> </a></h3>
+                    <div class="d-inline-block text-accent">$<?= $pro['preço'] ?>.<small>00</small></div>
                     <div class="d-inline-block text-muted fs-ms border-start ms-2 ps-2">Sales: <span class="fw-medium">26</span></div>
                     <div class="d-inline-block text-muted fs-ms border-start ms-2 ps-2">Earnings: <span class="fw-medium">$327.<small>60</small></span></div>
                     <div class="d-flex justify-content-center justify-content-sm-start pt-3">
